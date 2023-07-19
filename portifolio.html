@@ -14,7 +14,7 @@
     </header>
     <main>
         <section id="welcome-section">
-            <h1>Olá, eu sou o Micael</h1>
+            <h1 id="titulo">Olá, eu sou o Micael</h1>
             <p id="prof">Um desenvolvedor Web</p>
         </section>
         <section id="projects">
@@ -46,5 +46,16 @@
     <footer>
 
     </footer>
+
+    <script>
+        function applyColorAnimation() {
+          const titulo = document.getElementById('titulo');
+          titulo.style.animation = 'changeColor 1.5s 1';
+          setTimeout(() => {
+            titulo.style.color = 'yellow';
+            }, 2000);
+        }
+        window.addEventListener('load', applyColorAnimation);
+    </script>
 </body>
 </html>

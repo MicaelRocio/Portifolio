@@ -2,6 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+@keyframes changeColor {
+    0%, 70% { color: yellow; }
+    10%, 30%, 60%, 90% { color: #666600; }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -109,6 +114,10 @@ main {
     color: #fff;
     font-size: 14px;
     height: 30px;
+}
+
+.legenda-img:hover {
+    background-color: #000000;
 }
 
 :root {
